@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title> Memento.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <h1 id = " start"> 1 работа.</h1>
+  <h2> Ссылки.</h2>
+
+ <p><a href = "http://example.com" target ="_blank"> 1. Абсолютная гиперссылка на главную страницу сайта example.com </a></p>
+ <p><a href = "https://example.com" target ="_blank">2.Абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a></p>
+ <p><a href = " ftp:// example.com/1.txt" target ="_blank" > 3.Ссылку на файл на сервере FTP без авторизации  </a></p>
+ <p><a href = " ftp://log:password@example.com/1.txt" target ="_blank" > 4.Ссылку на файл на сервере FTP с авторизацией </a></p>
+ <a href="#Gaia_1"></a>
+ <p><a href="https://en.wikipedia.org/wiki/Sirius#Gaia_1">5.Ссылка на фрагмент страницы некоторого сайта</a></p>
+ <p><a href = "#start" > 6.Ссылка на фрагмент текущей страницы </a></p>
+ <p><a href = " https://translate.google.com/#view=home&op=translate&sl=auto&tl=ru&text=zrd" target ="_blank" > 7. Ссылка с двумя параметрами в URL </a></p>
+ <p title = "안녕하세요 세계"><a href = "https://kubsu.ru " target ="_blank"> 8.Список ссылок основной навигации сайта с подписями title</a></p>
+ <p><a  = "http://htmlbook.ru/html"> 9.Ссылка без href </a></p>
+ <p><a href = ""> 10.Cсылка с пустым href </a></p>
+ <p><a href="https://www.kubsu.ru/" rel = "nofollow">11. Ссылка, по которой запрещен переход поисковикам</a></p>
+ <p><noindex><a href ="https://www.kubsu.ru/"target ="_blank">12.Запрещенная для индексации поисковиками</a><noindex></P>
+ <p><a href = " https://www.kubsu.ru/fktipm" target ="_blank"  > 13.Контекстную в тексте абзаца </a></p>
+ <p><a href = "https://en.wikipedia.org/wiki/Sirius/"> 14.<img src = "https://sun9-63.userapi.com/c857420/v857420345/4575f/GDyhcKwZlZ0.jpg" width = "120" height = "120"></a></p>
+ <p><map name ="push_the_picture"><area shape = "rect" coords = "50,50,200,200" href = "https://kubsu.ru/"> 15. </map><img src = "https://sun9-15.userapi.com/c857420/v857420345/45756/rqJpZpf6OD8.jpg" width = "120" height = "120" usemap = "#push_the_picture"></p>
+ <p><a href = " http://example.com/catalog/file.html" target ="_blank"> 16. Относительную на страницу в текущем каталоге.</a></p>
+ <p><a href = " http://example.com/about/file1.html "  target ="_blank"> 17. Относительную на страницу в каталоге about.</a></p>
+ <p><a href = "../index.html " target ="_blank"> 18. Относительную на страницу в каталоге уровнем выше текущего  </a></p>
+ <p><a href = " ../../index.htm"  target ="_blank"> 19. Относительную на страницу в каталоге двумя уровнями выше </a></p>
+ <p><a href = " http://example.com/main "  target ="_blank"> 20. Cокращенную на главную  </a></p>
+ <p><a href = " http://example.com/main/page"  target ="_blank"> 21.Cокращенную ссылку на внутреннюю.  </a></p>
+
+
+
+
+    <h2>Форма.</h2>
+
+    <form action="URL_отправки_данных"
+      method="POST или GET">
+
+      <div>
+        Имя:<br />
+        <input name="field-name-1"
+        placeholder="начальное значение" />
+      </div><br />
+
+      <div>
+        E-mail:<br />
+        <input name="field-email"
+        placeholder="your_adres@example.com"
+          type="email" />
+      </div><br />
+
+      <div>
+        Дата рождения:<br />
+        <input name="field-date"
+        placeholder="2019-08-13"
+          type="date" />
+      </div><br />
+
+      Пол:<br />
+      <div><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        жен.</div>
+      <div><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        муж.</div><br />
+
+
+        Количество конечностей:<br />
+        <div><input type="radio" checked="checked"
+          name="radio-group-1" value="Значение1" />
+          0-4 </div>
+        <div><input type="radio"
+          name="radio-group-1" value="Значение2"/>
+          4-8 </div><br/>
+         
+  
+
+      <div>
+        Биография:<br />
+        <textarea name="field-name-2" placeholder = "Напишете о себе"></textarea>
+      </div><br />
+
+      <div>
+        Сверхспособности:<br />
+        <select name="field-name-3">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+          <option value="Значение3">Левитация </option>
+        </select>
+      </div><br />
+
+      <div>
+        Класс : <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Воин</option>
+          <option value="Значение2" selected="selected">Охотник на демонов</option>
+          <option value="Значение3" selected="selected">Жрец</option>
+        </select>
+      </div><br />
+
+        С контрактом ознакомлен:<br />
+      <div><input type="checkbox" checked="checked"
+        name="check-1" />
+        Ознакомлен</div><br />
+
+      Отправить:
+      <input type="submit" value="Отправить" />
+    </form>
+
+</body>
+</html>
